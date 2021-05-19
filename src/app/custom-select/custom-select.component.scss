@@ -1,0 +1,39 @@
+@import "~src/scss/variables";
+
+.select-container {
+  text-align: start;
+  width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  .label {
+    @include labelStyle();
+  }
+  .dropdown {
+    width: 400px;
+    height: 50px;
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("/../assets/down-arrow.png");
+    background-position: 380px 25px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+      padding-top: 4%;
+    }
+  }
+
+  .optionList {
+    background-color: white;
+    border: 1px solid lightgray;
+    z-index: 2;
+    .option {
+      cursor: pointer;
+      padding-left: 2%;
+      border-bottom: 1px solid lightgray;
+    }
+  }
+}

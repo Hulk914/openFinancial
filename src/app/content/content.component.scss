@@ -1,0 +1,255 @@
+@import "~src/scss/variables";
+
+@mixin footer-common {
+  background-repeat: no-repeat;
+  background-position: 34px 34px, 34px 143px, 34px 173px;
+  background-size: 90px 90px, 323px 19px, 323px 38px;
+  width: 391px;
+  height: 253px;
+  box-shadow: 0px 0px 30px #2321321f;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.label {
+  @include labelStyle();
+}
+
+.input-container {
+  text-align: start;
+  width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  input {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+  }
+}
+
+.content-container {
+  display: flex;
+  position: relative;
+  left: 0;
+  top: 102px;
+  .content-container__1 {
+    .simple-text-container {
+      position: relative;
+      top: 0;
+      left: 189px;
+      width: 407px;
+      height: 98px;
+      background: transparent url("/../assets/simpleText.svg") 0% 0% no-repeat
+        padding-box;
+      opacity: 1;
+    }
+
+    .under-border {
+      margin-top: 8px;
+      margin-left: 192px;
+      width: 236px;
+      height: 8px;
+      background: #000000 0% 0% no-repeat padding-box;
+      border-radius: 13px;
+      opacity: 0.7;
+    }
+
+    .collect-img {
+      margin-top: 82px;
+      margin-left: 136px;
+      width: 652px;
+      height: 365px;
+      background: transparent url("/../assets/collect_img-video.png") 0% 0%
+        no-repeat padding-box;
+      opacity: 1;
+    }
+  }
+}
+
+.footer-container_1 {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 1137px;
+  position: absolute;
+  .footer-image-col-1__1 {
+    &:hover {
+      background-color: #c6a7dc;
+    }
+    margin: 0 0 60px 191px;
+    background-image: url("/../assets/paidInstant.png"),
+      url("/../assets/cashDisburse.svg"), url("/../assets/loanTerms.svg");
+    @include footer-common();
+  }
+
+  .footer-image-col-1__2 {
+    &:hover {
+      background-color: #c6a7dc;
+    }
+    margin-left: 191px;
+    margin-right: 0;
+    margin-bottom: 60px;
+    background-image: url("/../assets/lowInt.png"),
+      url("/../assets/Low-interest rate.svg"), url("/../assets/achieveGoal.svg");
+    @include footer-common();
+  }
+
+  .footer-image-col-1__3 {
+    &:hover {
+      background-color: #c6a7dc;
+    }
+    margin-left: 191px;
+    margin-right: 0;
+    background-image: url("/../assets/securePayments.png"),
+      url("/../assets/ZeroPaperwork.svg"), url("/../assets/instant.svg");
+    @include footer-common();
+    margin-bottom: 83px;
+  }
+}
+
+.footer-container_2 {
+  display: flex;
+  flex-direction: column;
+  left: 630px;
+  top: 1261px;
+  position: absolute;
+  .footer-image-col-2__1 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 391px;
+    height: 253px;
+    box-shadow: 0px 0px 30px #2321321f;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    opacity: 1;
+    background-color: #c6a7dc;
+    background-image: url("/../assets/featureIcon.png"),
+      url("/../assets/ace.svg"), url("/../assets/manage.svg");
+    background-repeat: no-repeat;
+    background-position: 34px 34px, 34px 143px, 34px 173px;
+    background-size: 90px 90px, 323px 19px, 323px 38px;
+    margin-bottom: 60px;
+  }
+  .footer-image-col-2__2 {
+    &:hover {
+      background-color: #c6a7dc;
+    }
+    @include footer-common();
+    background-image: url("/../assets/Covid.png"),
+      url("/../assets/covidLoans.svg"), url("/../assets/zeroEmi.svg");
+  }
+}
+
+.calculator-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 270px;
+  left: 1100px;
+  width: 688px;
+  height: 675px;
+  .calculator-container__1 {
+    width: 500px;
+    border-radius: 10%;
+    background-color: white;
+    height: 100%;
+    .calculator-container__form {
+      label {
+        color: lightgray;
+        font-size: 20px;
+        font-family: normal normal normal 25px/34px Open Sans;
+      }
+
+      h4 {
+        padding-top: 2%;
+        margin-top: 0;
+      }
+      text-align: center;
+      font: normal normal normal 25px/34px Open Sans;
+    }
+  }
+
+  .calculator-container__2 {
+    width: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #663399;
+    height: 70%;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    .label {
+      text-align: center;
+      opacity: 0.5;
+    }
+    .margin-top {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 150px;
+      height: 58px;
+      box-shadow: 0px 0px 20px #00000033;
+      border: 2px solid #663399;
+      border-radius: 24px;
+      margin-top: 81px;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #663399;
+      opacity: 1;
+    }
+  }
+}
+
+.boost-container {
+  position: absolute;
+  top: 1377px;
+  left: 1158px;
+  .boost-container__open {
+    width: 490px;
+    height: 98px;
+    background: transparent url("/../assets/boostText.svg") 0% 0% no-repeat
+      padding-box;
+  }
+  .boost-container__border {
+    margin-top: 53px;
+    width: 120px;
+    height: 1px;
+    background: transparent url("/../assets/underLine.svg") 0% 0% no-repeat
+      padding-box;
+    border: 6px solid #707070;
+  }
+  .boost-container__description {
+    margin-top: 33px;
+    width: 490px;
+    height: 44px;
+    background: transparent url("/../assets/boostDescription.svg") 0% 0%
+      no-repeat padding-box;
+  }
+  .boost_container__button {
+    &:hover {
+      background: white;
+      color: #663399;
+    }
+    cursor: pointer;
+    margin-top: 81px;
+    width: 279px;
+    height: 58px;
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    margin-top: 81px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #663399;
+    opacity: 1;
+  }
+}

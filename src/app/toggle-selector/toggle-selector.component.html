@@ -1,0 +1,11 @@
+<div class="toggle-container">
+  <span class="label">Do you have any existing loans?</span>
+  <div
+    (click)="toggleOff()"
+    class="toggle"
+    [ngClass]="{ 'toggle-filled': !off, 'toggle-empty': off }"
+  >
+    <div *ngIf="off" class="thumb-left"></div>
+    <div *ngIf="!off" class="thumb-right"></div>
+  </div>
+</div>

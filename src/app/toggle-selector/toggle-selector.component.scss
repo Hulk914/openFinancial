@@ -1,0 +1,46 @@
+@import "~src/scss/variables";
+
+.toggle-container {
+  width: 400px;
+  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  .label {
+    @include labelStyle();
+  }
+
+  .toggle-filled {
+    background-color: #663399;
+  }
+
+  .toggle-empty {
+    background-color: lightgray;
+  }
+
+  .toggle {
+    border-radius: 24px;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .thumb-left {
+      border-radius: 50%;
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      margin-right: 1%;
+      border: 1px solid black;
+    }
+    .thumb-right {
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      margin-left: 53%;
+    }
+  }
+}

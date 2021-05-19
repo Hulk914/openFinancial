@@ -1,0 +1,14 @@
+<!-- can bind to input from parent but in current design only required once -->
+<div class="select-container">
+  <span class="label">Repayment Tenure</span>
+  <div class="dropdown" (click)="toggleDropdown()">
+    <p>{{ selectedValue }} Months</p>
+  </div>
+  <ng-container *ngIf="show">
+    <div class="optionList" *ngFor="let value of optionList">
+      <div (click)="selectedValue = value; show = false" class="option">
+        {{ value }} Months
+      </div>
+    </div>
+  </ng-container>
+</div>

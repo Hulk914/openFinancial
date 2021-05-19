@@ -1,0 +1,68 @@
+<div class="content-container">
+  <div class="content-container__1">
+    <div class="simple-text-container"></div>
+    <div class="under-border"></div>
+    <div class="collect-img"></div>
+  </div>
+</div>
+
+<div class="footer-container_1">
+  <div class="footer-image-col-1__1"></div>
+  <div class="footer-image-col-1__2"></div>
+  <div class="footer-image-col-1__3"></div>
+</div>
+<div class="footer-container_2">
+  <div class="footer-image-col-2__1"></div>
+  <div class="footer-image-col-2__2"></div>
+</div>
+
+<div class="calculator-container">
+  <div class="calculator-container__1">
+    <div class="calculator-container__form">
+      <h4>Eligibility Counter</h4>
+      <app-slider
+        [min]="100000"
+        [max]="300000"
+        [initialValue]="150000"
+        sliderLabel="Monthly Income"
+        id="monthly"
+      ></app-slider>
+      <app-slider
+        [min]="0"
+        [max]="100000"
+        [initialValue]="50000"
+        sliderLabel="Monthly Expense"
+        id="expense"
+      ></app-slider>
+
+      <app-custom-select></app-custom-select>
+      <app-toggle-selector
+        (toggled)="showExisting = $event"
+      ></app-toggle-selector>
+      <div *ngIf="showExisting" class="input-container">
+        <span class="label">EMI of existing loan (optional)</span>
+        <input
+          type="text"
+          [ngModel]="inputVal | currency: 'USD':'symbol':'2.2'"
+          [ngModelOptions]="{ updateOn: 'blur' }"
+          (ngModelChange)="inputChanged($event)"
+          size="50"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="calculator-container__2">
+    <div class="label">Loan Amount</div>
+    <div class="amount">{{ 100000 | currency: "&#8377;" }}</div>
+    <div class="label margin-top">Your EMI will be</div>
+    <div class="amount">{{ 15000 | currency: "&#8377;" }}</div>
+    <button>GET MONEY</button>
+  </div>
+</div>
+
+<div class="boost-container">
+  <div class="boost-container__open"></div>
+  <div class="boost-container__border"></div>
+  <div class="boost-container__description"></div>
+  <button class="boost_container__button">Get an Open Account</button>
+</div>

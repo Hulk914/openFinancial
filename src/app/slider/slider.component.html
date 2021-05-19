@@ -1,0 +1,19 @@
+<div class="slidecontainer">
+  <label [for]="id">{{ sliderLabel }}</label>
+  <p>{{ sliderValue | currency: "&#8377;" }}</p>
+  <input
+    #slider
+    type="range"
+    [min]="min"
+    [max]="max"
+    [value]="sliderValue"
+    step="1"
+    class="slider"
+    [id]="id"
+    (input)="sliderUpdated($event)"
+  />
+  <div class="slider-footer">
+    <span>{{ min | currency: "&#8377;" }}</span>
+    <span>{{ max | currency: "&#8377;" }}</span>
+  </div>
+</div>
