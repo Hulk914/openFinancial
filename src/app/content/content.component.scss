@@ -2,10 +2,10 @@
 
 @mixin footer-common {
   background-repeat: no-repeat;
-  background-position: 34px 34px, 34px 143px, 34px 173px;
-  background-size: 90px 90px, 323px 19px, 323px 38px;
-  width: 391px;
-  height: 253px;
+  background-position: 2rem 2rem, 2rem 6rem, 2rem 6rem;
+  background-size: 3rem 3rem, 17rem 1rem, 21rem 5rem;
+  width: 20rem;
+  height: 12rem;
   box-shadow: 0px 0px 30px #2321321f;
   border: 1px solid #ffffff;
   border-radius: 20px;
@@ -18,15 +18,15 @@
 
 .input-container {
   text-align: start;
-  width: 400px;
+  width: 19rem;
   margin: auto;
   margin-top: 10px;
   input {
     width: 100%;
-    height: 30px;
+    height: 2rem;
     border: 0;
     border-bottom: 1px solid grey;
-    font-size: 20px;
+    font-size: 0.95rem;
   }
 }
 
@@ -34,22 +34,23 @@
   display: flex;
   position: relative;
   left: 0;
-  top: 102px;
+  top: 6rem;
   .content-container__1 {
     .simple-text-container {
       position: relative;
       top: 0;
-      left: 189px;
-      width: 407px;
-      height: 98px;
-      background: transparent url("/../assets/simpleText.svg") 0% 0% no-repeat
-        padding-box;
+      left: 10rem;
+      height: 5rem;
+      width: 18rem;
+      background: transparent url(/../assets/simpleText.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
       opacity: 1;
     }
 
     .under-border {
-      margin-top: 8px;
-      margin-left: 192px;
+      margin-top: 0.05rem;
+      margin-left: 10rem;
       width: 236px;
       height: 8px;
       background: #000000 0% 0% no-repeat padding-box;
@@ -58,13 +59,14 @@
     }
 
     .collect-img {
-      margin-top: 82px;
-      margin-left: 136px;
-      width: 652px;
-      height: 365px;
-      background: transparent url("/../assets/collect_img-video.png") 0% 0%
-        no-repeat padding-box;
+      margin-top: 3rem;
+      margin-left: 7rem;
+      width: 31rem;
+      height: 17rem;
+      background: transparent url(/../assets/collect_img-video.png);
       opacity: 1;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -73,15 +75,15 @@
   display: flex;
   flex-direction: column;
   left: 0;
-  top: 1137px;
+  top: 50rem;
   position: absolute;
   .footer-image-col-1__1 {
     &:hover {
       background-color: #c6a7dc;
     }
-    margin: 0 0 60px 191px;
-    background-image: url("/../assets/paidInstant.png"),
-      url("/../assets/cashDisburse.svg"), url("/../assets/loanTerms.svg");
+    margin: 0 0 1rem 10rem;
+    background-image: url(/../assets/paidInstant.png),
+      url(/../assets/cashDisburse.svg), url(/../assets/loanTerms.svg);
     @include footer-common();
   }
 
@@ -89,9 +91,9 @@
     &:hover {
       background-color: #c6a7dc;
     }
-    margin-left: 191px;
+    margin-left: 10rem;
     margin-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: 1rem;
     background-image: url("/../assets/lowInt.png"),
       url("/../assets/Low-interest rate.svg"), url("/../assets/achieveGoal.svg");
     @include footer-common();
@@ -101,27 +103,27 @@
     &:hover {
       background-color: #c6a7dc;
     }
-    margin-left: 191px;
+    margin-left: 10rem;
     margin-right: 0;
     background-image: url("/../assets/securePayments.png"),
       url("/../assets/ZeroPaperwork.svg"), url("/../assets/instant.svg");
     @include footer-common();
-    margin-bottom: 83px;
+    margin-bottom: 1rem;
   }
 }
 
 .footer-container_2 {
   display: flex;
   flex-direction: column;
-  left: 630px;
-  top: 1261px;
+  left: 33rem;
+  top: 55rem;
   position: absolute;
   .footer-image-col-2__1 {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    width: 391px;
-    height: 253px;
+    width: 20rem;
+    height: 12rem;
     box-shadow: 0px 0px 30px #2321321f;
     border: 1px solid #ffffff;
     border-radius: 20px;
@@ -130,9 +132,9 @@
     background-image: url("/../assets/featureIcon.png"),
       url("/../assets/ace.svg"), url("/../assets/manage.svg");
     background-repeat: no-repeat;
-    background-position: 34px 34px, 34px 143px, 34px 173px;
-    background-size: 90px 90px, 323px 19px, 323px 38px;
-    margin-bottom: 60px;
+    background-position: 2rem 2rem, 2rem 6rem, 2rem 6rem;
+    background-size: 3rem 3rem, 17rem 1rem, 21rem 5rem;
+    margin-bottom: 1rem;
   }
   .footer-image-col-2__2 {
     &:hover {
@@ -148,15 +150,15 @@
   position: absolute;
   display: flex;
   align-items: center;
-  top: 270px;
-  left: 1100px;
-  width: 688px;
-  height: 675px;
+  top: 11rem;
+  left: 46rem;
+  width: 44rem;
+  height: 45rem;
   .calculator-container__1 {
-    width: 500px;
+    width: 25rem;
     border-radius: 10%;
     background-color: white;
-    height: 100%;
+    height: 40rem;
     .calculator-container__form {
       label {
         color: lightgray;
@@ -167,6 +169,7 @@
       h4 {
         padding-top: 2%;
         margin-top: 0;
+        font-size: 1rem;
       }
       text-align: center;
       font: normal normal normal 25px/34px Open Sans;
@@ -174,14 +177,14 @@
   }
 
   .calculator-container__2 {
-    width: 188px;
+    width: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10%;
     background-color: #663399;
-    height: 70%;
+    height: 28rem;
     margin-left: 10px;
     text-align: center;
     color: white;
@@ -211,28 +214,30 @@
 
 .boost-container {
   position: absolute;
-  top: 1377px;
-  left: 1158px;
+  top: 60rem;
+  left: 64rem;
   .boost-container__open {
-    width: 490px;
-    height: 98px;
-    background: transparent url("/../assets/boostText.svg") 0% 0% no-repeat
-      padding-box;
+    width: 18rem;
+    height: 4rem;
+    background: transparent url(/../assets/boostText.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   .boost-container__border {
-    margin-top: 53px;
-    width: 120px;
-    height: 1px;
-    background: transparent url("/../assets/underLine.svg") 0% 0% no-repeat
-      padding-box;
-    border: 6px solid #707070;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 2rem;
+    background: transparent url(/../assets/underLine.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   .boost-container__description {
-    margin-top: 33px;
-    width: 490px;
-    height: 44px;
-    background: transparent url("/../assets/boostDescription.svg") 0% 0%
-      no-repeat padding-box;
+    margin-top: 1rem;
+    width: 19rem;
+    height: 2rem;
+    background: transparent url(/../assets/boostDescription.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   .boost_container__button {
     &:hover {
@@ -240,13 +245,12 @@
       color: #663399;
     }
     cursor: pointer;
-    margin-top: 81px;
-    width: 279px;
-    height: 58px;
+    width: 10rem;
+    height: 2rem;
     box-shadow: 0px 0px 20px #00000033;
     border: 2px solid #663399;
     border-radius: 24px;
-    margin-top: 81px;
+    margin-top: 3rem;
     text-align: center;
     letter-spacing: 0px;
     color: #663399;
